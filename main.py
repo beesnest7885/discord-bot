@@ -97,7 +97,7 @@ intents.message_content = True  # Enable the message content intent
 client = commands.Bot(command_prefix=".", intents=intents)
 
 def load_cogs(client):
-    for folder in ['cogs', 'cog2']:
+    for folder in ['cogs']:
         for filename in os.listdir(f'./{folder}'):
             if filename.endswith('.py'):
                 cog_name = filename[:-3]
